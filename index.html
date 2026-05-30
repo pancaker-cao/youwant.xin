@@ -154,7 +154,7 @@
         </div>
     </section>
 
-    <!-- 作品展示 -->
+    <!-- 精选作品轮播 -->
     <section class="py-24 md:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="animate-on-scroll text-center max-w-xl mx-auto mb-16">
@@ -163,43 +163,1495 @@
                 <p class="text-gray-500-c leading-relaxed">每一件作品都倾注了我们的专注与热爱</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-                <div class="portfolio-card animate-on-scroll group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
-                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1580477371194-459b9a32c4f1?w=600&q=80" alt="机甲模型涂装" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="animate-on-scroll relative max-w-5xl mx-auto">
+                <div id="carousel" class="relative overflow-hidden rounded-2xl shadow-card-lg">
+                    <div id="carousel-slides" class="flex transition-transform duration-500 ease-expo">
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/人物/明日香手办蓝天背景照.jpeg" class="w-full aspect-[16/9] object-cover" alt="明日香手办蓝天背景照">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">明日香手办蓝天背景照</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/物品/高达模型背面展示.jpeg" class="w-full aspect-[16/9] object-cover" alt="高达模型背面展示">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">高达模型背面展示</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/物品/红色EVA二号机模型持刀战斗.jpeg" class="w-full aspect-[16/9] object-cover" alt="红色EVA二号机模型持刀战斗">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">红色EVA二号机模型持刀战斗</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/物品/蝙蝠侠机甲模型摆拍.jpeg" class="w-full aspect-[16/9] object-cover" alt="蝙蝠侠机甲模型摆拍">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">蝙蝠侠机甲模型摆拍</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/人物/钢铁侠MK5全身展示.jpeg" class="w-full aspect-[16/9] object-cover" alt="钢铁侠MK5全身展示">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">钢铁侠MK5全身展示</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/物品/粉发比基尼动漫手办全景.jpeg" class="w-full aspect-[16/9] object-cover" alt="粉发比基尼动漫手办全景">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">粉发比基尼动漫手办全景</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/其他/机甲兽持武器战斗姿态.jpeg" class="w-full aspect-[16/9] object-cover" alt="机甲兽持武器战斗姿态">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">机甲兽持武器战斗姿态</p>
+                            </div>
+                        </div>
+                        <div class="carousel-slide min-w-full relative">
+                            <img src="images/物品/金色机甲全身像.jpeg" class="w-full aspect-[16/9] object-cover" alt="金色机甲全身像">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/55 to-transparent pt-12 pb-5 px-6">
+                                <p class="text-white text-[16px] font-semibold">金色机甲全身像</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">精细涂装</span>
-                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">高达 MG 沙扎比 Ver.Ka</h3>
-                        <p class="text-gray-500-c text-[13px] leading-relaxed">金属漆分色喷涂，精密刻线渗线，消光质感呈现。</p>
-                    </div>
+
+                    <button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full transition-all duration-300">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full transition-all duration-300">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2"></div>
                 </div>
-                <div class="portfolio-card animate-on-scroll animate-delay-1 group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
-                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=600&q=80" alt="场景制作" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品案例 -->
+    <section class="py-24 md:py-32 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="animate-on-scroll text-center max-w-xl mx-auto mb-16">
+                <span class="text-[13px] font-semibold text-accent uppercase tracking-[0.15em]">Gallery</span>
+                <h2 class="text-[30px] md:text-[36px] font-bold text-primary mt-3 mb-4 leading-tight">作品案例</h2>
+                <p class="text-gray-500-c leading-relaxed">按类别浏览我们的模型作品</p>
+            </div>
+
+            <div class="animate-on-scroll mb-16">
+                <h3 class="text-[24px] font-bold text-primary mb-8 pb-3 border-b-2 border-accent/20">人物</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/EVA八号机持长柄武器摆姿势.jpeg" alt="EVA八号机持长柄武器摆姿势" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="EVA八号机持长柄武器摆姿势">EVA八号机持长柄武器摆姿势</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">场景制作</span>
-                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">废墟都市战斗场景</h3>
-                        <p class="text-gray-500-c text-[13px] leading-relaxed">多层地台 + 旧化涂装 + 爆炸特效件，营造叙事氛围。</p>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/丽塔机甲大幅跨步张开双臂.jpeg" alt="丽塔机甲大幅跨步张开双臂" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="丽塔机甲大幅跨步张开双臂">丽塔机甲大幅跨步张开双臂</p>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-card animate-on-scroll animate-delay-2 group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
-                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1558000334-eb24b8d0ae67?w=600&q=80" alt="手办涂装" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/丽塔机甲正面持发光武器直立.jpeg" alt="丽塔机甲正面持发光武器直立" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="丽塔机甲正面持发光武器直立">丽塔机甲正面持发光武器直立</p>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">手办加工</span>
-                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">GK 龙珠 超赛悟空</h3>
-                        <p class="text-gray-500-c text-[13px] leading-relaxed">肤色渐变 + 头发透明件处理 + 肌肉阴影强化。</p>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/丽塔机甲红黑配色持光剑.jpeg" alt="丽塔机甲红黑配色持光剑" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="丽塔机甲红黑配色持光剑">丽塔机甲红黑配色持光剑</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/丽塔机甲高抬腿踢腿摆姿.jpeg" alt="丽塔机甲高抬腿踢腿摆姿" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="丽塔机甲高抬腿踢腿摆姿">丽塔机甲高抬腿踢腿摆姿</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/动漫女性骑士持剑侧面.jpeg" alt="动漫女性骑士持剑侧面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="动漫女性骑士持剑侧面">动漫女性骑士持剑侧面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/动漫少女铠甲持剑侧面.jpeg" alt="动漫少女铠甲持剑侧面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="动漫少女铠甲持剑侧面">动漫少女铠甲持剑侧面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/双手持枪的机甲战士.jpeg" alt="双手持枪的机甲战士" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="双手持枪的机甲战士">双手持枪的机甲战士</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/发光背部蓝色蝴蝶结.jpeg" alt="发光背部蓝色蝴蝶结" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="发光背部蓝色蝴蝶结">发光背部蓝色蝴蝶结</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/名侦探柯南Q版人偶.jpeg" alt="名侦探柯南Q版人偶" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="名侦探柯南Q版人偶">名侦探柯南Q版人偶</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/戴帽橙发动漫手办特写.jpeg" alt="戴帽橙发动漫手办特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="戴帽橙发动漫手办特写">戴帽橙发动漫手办特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/拉弓的机甲士兵.jpeg" alt="拉弓的机甲士兵" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="拉弓的机甲士兵">拉弓的机甲士兵</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/持剑的机甲兵人.jpeg" alt="持剑的机甲兵人" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持剑的机甲兵人">持剑的机甲兵人</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/持剑蓝衣动漫手办半身像.jpeg" alt="持剑蓝衣动漫手办半身像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持剑蓝衣动漫手办半身像">持剑蓝衣动漫手办半身像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/捷德奥特曼机甲模型持剑.jpeg" alt="捷德奥特曼机甲模型持剑" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="捷德奥特曼机甲模型持剑">捷德奥特曼机甲模型持剑</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/捷德奥特曼机甲模型背影.jpeg" alt="捷德奥特曼机甲模型背影" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="捷德奥特曼机甲模型背影">捷德奥特曼机甲模型背影</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/摆pose的动漫女孩手办.jpeg" alt="摆pose的动漫女孩手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="摆pose的动漫女孩手办">摆pose的动漫女孩手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/明日香全貌正面展示.jpeg" alt="明日香全貌正面展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="明日香全貌正面展示">明日香全貌正面展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/明日香戴帽侧身像.jpeg" alt="明日香戴帽侧身像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="明日香戴帽侧身像">明日香戴帽侧身像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/明日香手办蓝天背景照.jpeg" alt="明日香手办蓝天背景照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="明日香手办蓝天背景照">明日香手办蓝天背景照</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/明日香面部特写.jpeg" alt="明日香面部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="明日香面部特写">明日香面部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/机甲人偶伸出手部特写.jpeg" alt="机甲人偶伸出手部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲人偶伸出手部特写">机甲人偶伸出手部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/机甲人偶侧身摆姿.jpeg" alt="机甲人偶侧身摆姿" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲人偶侧身摆姿">机甲人偶侧身摆姿</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/机甲人偶持武器正面照.jpeg" alt="机甲人偶持武器正面照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲人偶持武器正面照">机甲人偶持武器正面照</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/柯南指着镜头.jpeg" alt="柯南指着镜头" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="柯南指着镜头">柯南指着镜头</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/猫咪耳朵蓝衣少女模型.jpeg" alt="猫咪耳朵蓝衣少女模型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="猫咪耳朵蓝衣少女模型">猫咪耳朵蓝衣少女模型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/粉发女性角色全身手办.jpeg" alt="粉发女性角色全身手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉发女性角色全身手办">粉发女性角色全身手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/红黑机甲人偶特写.jpeg" alt="红黑机甲人偶特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红黑机甲人偶特写">红黑机甲人偶特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/蓝甲女性人偶胸像.jpeg" alt="蓝甲女性人偶胸像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝甲女性人偶胸像">蓝甲女性人偶胸像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/蓝甲女性人偶胸像2.jpeg" alt="蓝甲女性人偶胸像2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝甲女性人偶胸像2">蓝甲女性人偶胸像2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/蓝衣白发猫耳手办.jpeg" alt="蓝衣白发猫耳手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝衣白发猫耳手办">蓝衣白发猫耳手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/蓝衣银甲骑士双手持剑.jpeg" alt="蓝衣银甲骑士双手持剑" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝衣银甲骑士双手持剑">蓝衣银甲骑士双手持剑</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/赛文机甲做出战斗躲避手势.jpeg" alt="赛文机甲做出战斗躲避手势" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="赛文机甲做出战斗躲避手势">赛文机甲做出战斗躲避手势</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/赛文机甲坐姿展示装甲细节.jpeg" alt="赛文机甲坐姿展示装甲细节" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="赛文机甲坐姿展示装甲细节">赛文机甲坐姿展示装甲细节</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/赛文机甲手持长矛凝视前方.jpeg" alt="赛文机甲手持长矛凝视前方" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="赛文机甲手持长矛凝视前方">赛文机甲手持长矛凝视前方</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/赛文机甲持光剑跃起摆姿.jpeg" alt="赛文机甲持光剑跃起摆姿" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="赛文机甲持光剑跃起摆姿">赛文机甲持光剑跃起摆姿</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/赛文机甲站立持武器特写.jpeg" alt="赛文机甲站立持武器特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="赛文机甲站立持武器特写">赛文机甲站立持武器特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/金发铠甲女子手办特写.jpeg" alt="金发铠甲女子手办特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="金发铠甲女子手办特写">金发铠甲女子手办特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/钢铁侠MK5伸展手臂.jpeg" alt="钢铁侠MK5伸展手臂" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5伸展手臂">钢铁侠MK5伸展手臂</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/钢铁侠MK5全身展示.jpeg" alt="钢铁侠MK5全身展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5全身展示">钢铁侠MK5全身展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/钢铁侠MK5发光部件.jpeg" alt="钢铁侠MK5发光部件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5发光部件">钢铁侠MK5发光部件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/钢铁侠MK5面部特写.jpeg" alt="钢铁侠MK5面部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5面部特写">钢铁侠MK5面部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/黑色背景下持剑的机甲.jpeg" alt="黑色背景下持剑的机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色背景下持剑的机甲">黑色背景下持剑的机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/人物/齿轮场景中的柯南人偶.jpeg" alt="齿轮场景中的柯南人偶" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="齿轮场景中的柯南人偶">齿轮场景中的柯南人偶</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="animate-on-scroll text-center mt-12">
-                <a href="portfolio.html" class="inline-flex items-center gap-2 px-8 py-3 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 text-[15px]">
-                    查看全部作品 <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
+            <div class="animate-on-scroll mb-16">
+                <h3 class="text-[24px] font-bold text-primary mb-8 pb-3 border-b-2 border-accent/20">物品</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/X翼战机模型展示.jpeg" alt="X翼战机模型展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="X翼战机模型展示">X翼战机模型展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/一正一反的机器人头模.jpeg" alt="一正一反的机器人头模" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="一正一反的机器人头模">一正一反的机器人头模</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/三种精灵球摆件.jpeg" alt="三种精灵球摆件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="三种精灵球摆件">三种精灵球摆件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/两个机器人头部道具.jpeg" alt="两个机器人头部道具" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="两个机器人头部道具">两个机器人头部道具</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/两个橙白机甲持枪对战.jpeg" alt="两个橙白机甲持枪对战" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="两个橙白机甲持枪对战">两个橙白机甲持枪对战</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/全黑背景下发光机甲.jpeg" alt="全黑背景下发光机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="全黑背景下发光机甲">全黑背景下发光机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/兰博基尼模型车局部.jpeg" alt="兰博基尼模型车局部" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="兰博基尼模型车局部">兰博基尼模型车局部</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/前后摆放的两机器人头.jpeg" alt="前后摆放的两机器人头" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="前后摆放的两机器人头">前后摆放的两机器人头</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/前后摆放的绿色机器人头.jpeg" alt="前后摆放的绿色机器人头" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="前后摆放的绿色机器人头">前后摆放的绿色机器人头</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/双机甲手办战斗合影.jpeg" alt="双机甲手办战斗合影" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="双机甲手办战斗合影">双机甲手办战斗合影</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/双脚离地悬浮机甲.jpeg" alt="双脚离地悬浮机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="双脚离地悬浮机甲">双脚离地悬浮机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/发光的紫色模型枪械道具.jpeg" alt="发光的紫色模型枪械道具" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="发光的紫色模型枪械道具">发光的紫色模型枪械道具</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/带配件图解的白色橙机甲.jpeg" alt="带配件图解的白色橙机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="带配件图解的白色橙机甲">带配件图解的白色橙机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/彩色机甲灯光秀.jpeg" alt="彩色机甲灯光秀" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="彩色机甲灯光秀">彩色机甲灯光秀</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/手办正面拿剑动作展示.jpeg" alt="手办正面拿剑动作展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="手办正面拿剑动作展示">手办正面拿剑动作展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/手持长枪的机甲全身.jpeg" alt="手持长枪的机甲全身" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="手持长枪的机甲全身">手持长枪的机甲全身</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型侧面.jpeg" alt="扎古模型侧面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型侧面">扎古模型侧面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型全身.jpeg" alt="扎古模型全身" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型全身">扎古模型全身</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型后侧.jpeg" alt="扎古模型后侧" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型后侧">扎古模型后侧</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型后视图.jpeg" alt="扎古模型后视图" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型后视图">扎古模型后视图</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型头部特写.jpeg" alt="扎古模型头部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型头部特写">扎古模型头部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型正面.jpeg" alt="扎古模型正面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型正面">扎古模型正面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/扎古模型背影.jpeg" alt="扎古模型背影" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="扎古模型背影">扎古模型背影</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/报丧女妖机翼.jpeg" alt="报丧女妖机翼" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="报丧女妖机翼">报丧女妖机翼</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/报丧女妖模型.jpeg" alt="报丧女妖模型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="报丧女妖模型">报丧女妖模型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/披风飘舞的绿色胸像.jpeg" alt="披风飘舞的绿色胸像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="披风飘舞的绿色胸像">披风飘舞的绿色胸像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/持枪机甲手办展示.jpeg" alt="持枪机甲手办展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持枪机甲手办展示">持枪机甲手办展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/持模吉达二式机甲手办.jpeg" alt="持模吉达二式机甲手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持模吉达二式机甲手办">持模吉达二式机甲手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/持模吉达二式机甲站姿.jpeg" alt="持模吉达二式机甲站姿" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持模吉达二式机甲站姿">持模吉达二式机甲站姿</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/持盾吉达二式机甲背影.jpeg" alt="持盾吉达二式机甲背影" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持盾吉达二式机甲背影">持盾吉达二式机甲背影</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/持长枪红色机甲手办.jpeg" alt="持长枪红色机甲手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="持长枪红色机甲手办">持长枪红色机甲手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/星战X翼战机模型展示.jpeg" alt="星战X翼战机模型展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="星战X翼战机模型展示">星战X翼战机模型展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/星空背景下X翼战机模型.jpeg" alt="星空背景下X翼战机模型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="星空背景下X翼战机模型">星空背景下X翼战机模型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/暗光下仅底座发光机甲.jpeg" alt="暗光下仅底座发光机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="暗光下仅底座发光机甲">暗光下仅底座发光机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/暗光下发光的机甲.jpeg" alt="暗光下发光的机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="暗光下发光的机甲">暗光下发光的机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机械兽头部特写.jpeg" alt="机械兽头部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机械兽头部特写">机械兽头部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲上半身持枪特写.jpeg" alt="机甲上半身持枪特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲上半身持枪特写">机甲上半身持枪特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲巨爪特写.jpeg" alt="机甲巨爪特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲巨爪特写">机甲巨爪特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办动态姿势展示.jpeg" alt="机甲手办动态姿势展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办动态姿势展示">机甲手办动态姿势展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办悬浮于蓝光前.jpeg" alt="机甲手办悬浮于蓝光前" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办悬浮于蓝光前">机甲手办悬浮于蓝光前</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办持武器展示.jpeg" alt="机甲手办持武器展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办持武器展示">机甲手办持武器展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办持长矛站立.jpeg" alt="机甲手办持长矛站立" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办持长矛站立">机甲手办持长矛站立</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办站立正面照.jpeg" alt="机甲手办站立正面照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办站立正面照">机甲手办站立正面照</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲手办肩甲细节特写.jpeg" alt="机甲手办肩甲细节特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲手办肩甲细节特写">机甲手办肩甲细节特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲持枪剪影摆拍.jpeg" alt="机甲持枪剪影摆拍" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲持枪剪影摆拍">机甲持枪剪影摆拍</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲模型仰视全景展示.jpeg" alt="机甲模型仰视全景展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲模型仰视全景展示">机甲模型仰视全景展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲模型动态展示.jpeg" alt="机甲模型动态展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲模型动态展示">机甲模型动态展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲模型手持长步枪姿态.jpeg" alt="机甲模型手持长步枪姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲模型手持长步枪姿态">机甲模型手持长步枪姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲模型正面持枪全身.jpeg" alt="机甲模型正面持枪全身" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲模型正面持枪全身">机甲模型正面持枪全身</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲模型站立在户外.jpeg" alt="机甲模型站立在户外" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲模型站立在户外">机甲模型站立在户外</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具侧影持长剑.jpeg" alt="机甲玩具侧影持长剑" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具侧影持长剑">机甲玩具侧影持长剑</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具侧身持刀造型.jpeg" alt="机甲玩具侧身持刀造型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具侧身持刀造型">机甲玩具侧身持刀造型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具头部特写.jpeg" alt="机甲玩具头部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具头部特写">机甲玩具头部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具弓箭射击姿态.jpeg" alt="机甲玩具弓箭射击姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具弓箭射击姿态">机甲玩具弓箭射击姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具持刀站立造型.jpeg" alt="机甲玩具持刀站立造型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具持刀站立造型">机甲玩具持刀站立造型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具持刀造型.jpeg" alt="机甲玩具持刀造型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具持刀造型">机甲玩具持刀造型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲玩具持双枪站立.jpeg" alt="机甲玩具持双枪站立" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲玩具持双枪站立">机甲玩具持双枪站立</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲盾牌背部特写.jpeg" alt="机甲盾牌背部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲盾牌背部特写">机甲盾牌背部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲背部与头部局部特写.jpeg" alt="机甲背部与头部局部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲背部与头部局部特写">机甲背部与头部局部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲腿部与载具组合部件.jpeg" alt="机甲腿部与载具组合部件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲腿部与载具组合部件">机甲腿部与载具组合部件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/机甲腿部与载具组合部件2.jpeg" alt="机甲腿部与载具组合部件2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲腿部与载具组合部件2">机甲腿部与载具组合部件2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/柯南手指齿轮底座.jpeg" alt="柯南手指齿轮底座" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="柯南手指齿轮底座">柯南手指齿轮底座</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/柯南眼镜发光.jpeg" alt="柯南眼镜发光" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="柯南眼镜发光">柯南眼镜发光</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/橙色金色机甲模型.jpeg" alt="橙色金色机甲模型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="橙色金色机甲模型">橙色金色机甲模型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/灰色配橙色边的机甲底座.jpeg" alt="灰色配橙色边的机甲底座" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="灰色配橙色边的机甲底座">灰色配橙色边的机甲底座</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/灰色配橙色边的机甲底座2.jpeg" alt="灰色配橙色边的机甲底座2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="灰色配橙色边的机甲底座2">灰色配橙色边的机甲底座2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/灰色配橙色边的机甲底座3.jpeg" alt="灰色配橙色边的机甲底座3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="灰色配橙色边的机甲底座3">灰色配橙色边的机甲底座3</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/真假两个机甲手办合影.jpeg" alt="真假两个机甲手办合影" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="真假两个机甲手办合影">真假两个机甲手办合影</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/立体画框内太空战机模型.jpeg" alt="立体画框内太空战机模型" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="立体画框内太空战机模型">立体画框内太空战机模型</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/站姿展示粉色长发手办细节.jpeg" alt="站姿展示粉色长发手办细节" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="站姿展示粉色长发手办细节">站姿展示粉色长发手办细节</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉发比基尼动漫手办全景.jpeg" alt="粉发比基尼动漫手办全景" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉发比基尼动漫手办全景">粉发比基尼动漫手办全景</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲全身站姿展示.jpeg" alt="粉色机甲全身站姿展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲全身站姿展示">粉色机甲全身站姿展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲射击特效展示.jpeg" alt="粉色机甲射击特效展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲射击特效展示">粉色机甲射击特效展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲局部细节特写.jpeg" alt="粉色机甲局部细节特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲局部细节特写">粉色机甲局部细节特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲模型持枪摆姿势.jpeg" alt="粉色机甲模型持枪摆姿势" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲模型持枪摆姿势">粉色机甲模型持枪摆姿势</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲背部与侧面展示.jpeg" alt="粉色机甲背部与侧面展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲背部与侧面展示">粉色机甲背部与侧面展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/粉色机甲远景战斗姿态.jpeg" alt="粉色机甲远景战斗姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="粉色机甲远景战斗姿态">粉色机甲远景战斗姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/精灵球造型摆件.jpeg" alt="精灵球造型摆件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="精灵球造型摆件">精灵球造型摆件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/精灵球造型摆件2.jpeg" alt="精灵球造型摆件2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="精灵球造型摆件2">精灵球造型摆件2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/系绳精灵球挂件.jpeg" alt="系绳精灵球挂件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="系绳精灵球挂件">系绳精灵球挂件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/系绳精灵球摆件.jpeg" alt="系绳精灵球摆件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="系绳精灵球摆件">系绳精灵球摆件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/素组钢铁侠手办在工作台.jpeg" alt="素组钢铁侠手办在工作台" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="素组钢铁侠手办在工作台">素组钢铁侠手办在工作台</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/紫色机甲亮灯展示.jpeg" alt="紫色机甲亮灯展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="紫色机甲亮灯展示">紫色机甲亮灯展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红白机甲射击姿态.jpeg" alt="红白机甲射击姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红白机甲射击姿态">红白机甲射击姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红白机甲机器人手办.jpeg" alt="红白机甲机器人手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红白机甲机器人手办">红白机甲机器人手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红白机甲站立持枪.jpeg" alt="红白机甲站立持枪" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红白机甲站立持枪">红白机甲站立持枪</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红白机甲跪姿特写.jpeg" alt="红白机甲跪姿特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红白机甲跪姿特写">红白机甲跪姿特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红白配色机甲模型站立.jpeg" alt="红白配色机甲模型站立" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红白配色机甲模型站立">红白配色机甲模型站立</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色EVA二号机模型全身展示.jpeg" alt="红色EVA二号机模型全身展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色EVA二号机模型全身展示">红色EVA二号机模型全身展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色EVA二号机模型持刀战斗.jpeg" alt="红色EVA二号机模型持刀战斗" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色EVA二号机模型持刀战斗">红色EVA二号机模型持刀战斗</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色EVA二号机模型持剑跳跃.jpeg" alt="红色EVA二号机模型持剑跳跃" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色EVA二号机模型持剑跳跃">红色EVA二号机模型持剑跳跃</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色EVA二号机模型武器特写.jpeg" alt="红色EVA二号机模型武器特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色EVA二号机模型武器特写">红色EVA二号机模型武器特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色EVA二号机模型特写.jpeg" alt="红色EVA二号机模型特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色EVA二号机模型特写">红色EVA二号机模型特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红色机甲腿部零件细节.jpeg" alt="红色机甲腿部零件细节" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色机甲腿部零件细节">红色机甲腿部零件细节</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/红金钢铁侠手办展示.jpeg" alt="红金钢铁侠手办展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红金钢铁侠手办展示">红金钢铁侠手办展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色兰博基尼模型侧面.jpeg" alt="绿色兰博基尼模型侧面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色兰博基尼模型侧面">绿色兰博基尼模型侧面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色兰博基尼模型车头.jpeg" alt="绿色兰博基尼模型车头" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色兰博基尼模型车头">绿色兰博基尼模型车头</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色兰博基尼车轮特写.jpeg" alt="绿色兰博基尼车轮特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色兰博基尼车轮特写">绿色兰博基尼车轮特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色机甲模型背影展示.jpeg" alt="绿色机甲模型背影展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色机甲模型背影展示">绿色机甲模型背影展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色高达模型全身照.jpeg" alt="绿色高达模型全身照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色高达模型全身照">绿色高达模型全身照</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色高达模型全身照2.jpeg" alt="绿色高达模型全身照2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色高达模型全身照2">绿色高达模型全身照2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色高达模型头部近景.jpeg" alt="绿色高达模型头部近景" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色高达模型头部近景">绿色高达模型头部近景</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色高达模型正面特写.jpeg" alt="绿色高达模型正面特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色高达模型正面特写">绿色高达模型正面特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/绿色高达胸部细节特写.jpeg" alt="绿色高达胸部细节特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色高达胸部细节特写">绿色高达胸部细节特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/蓝光下的两个机器人头.jpeg" alt="蓝光下的两个机器人头" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝光下的两个机器人头">蓝光下的两个机器人头</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/蓝衣人物金发手办背面.jpeg" alt="蓝衣人物金发手办背面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蓝衣人物金发手办背面">蓝衣人物金发手办背面</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/蝙蝠侠机甲模型摆拍.jpeg" alt="蝙蝠侠机甲模型摆拍" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="蝙蝠侠机甲模型摆拍">蝙蝠侠机甲模型摆拍</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/躺姿紫色与站姿红色机甲.jpeg" alt="躺姿紫色与站姿红色机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="躺姿紫色与站姿红色机甲">躺姿紫色与站姿红色机甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/金色机甲全身像.jpeg" alt="金色机甲全身像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="金色机甲全身像">金色机甲全身像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/钢铁侠MK-LXXXV手办.jpeg" alt="钢铁侠MK-LXXXV手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK-LXXXV手办">钢铁侠MK-LXXXV手办</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/钢铁侠MK5橙色特效.jpeg" alt="钢铁侠MK5橙色特效" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5橙色特效">钢铁侠MK5橙色特效</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/钢铁侠MK5蓝光胸甲.jpeg" alt="钢铁侠MK5蓝光胸甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5蓝光胸甲">钢铁侠MK5蓝光胸甲</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/钢铁侠MK5蓝色特效件.jpeg" alt="钢铁侠MK5蓝色特效件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="钢铁侠MK5蓝色特效件">钢铁侠MK5蓝色特效件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/高达模型低角度俯拍.jpeg" alt="高达模型低角度俯拍" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="高达模型低角度俯拍">高达模型低角度俯拍</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/高达模型侧面展示.jpeg" alt="高达模型侧面展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="高达模型侧面展示">高达模型侧面展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/高达模型背面展示.jpeg" alt="高达模型背面展示" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="高达模型背面展示">高达模型背面展示</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲局部特写.jpeg" alt="黑色机甲局部特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲局部特写">黑色机甲局部特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲蝙蝠侠模型全身.jpeg" alt="黑色机甲蝙蝠侠模型全身" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲蝙蝠侠模型全身">黑色机甲蝙蝠侠模型全身</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲蝙蝠侠模型动作照.jpeg" alt="黑色机甲蝙蝠侠模型动作照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲蝙蝠侠模型动作照">黑色机甲蝙蝠侠模型动作照</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲蝙蝠侠模型半身特写.jpeg" alt="黑色机甲蝙蝠侠模型半身特写" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲蝙蝠侠模型半身特写">黑色机甲蝙蝠侠模型半身特写</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲蝙蝠侠模型持枪.jpeg" alt="黑色机甲蝙蝠侠模型持枪" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲蝙蝠侠模型持枪">黑色机甲蝙蝠侠模型持枪</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色机甲蝙蝠侠模型持盾.jpeg" alt="黑色机甲蝙蝠侠模型持盾" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色机甲蝙蝠侠模型持盾">黑色机甲蝙蝠侠模型持盾</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色绳结小物件.jpeg" alt="黑色绳结小物件" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色绳结小物件">黑色绳结小物件</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色绳结小物件2.jpeg" alt="黑色绳结小物件2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色绳结小物件2">黑色绳结小物件2</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/物品/黑色背景下动漫手办全身照.jpeg" alt="黑色背景下动漫手办全身照" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="黑色背景下动漫手办全身照">黑色背景下动漫手办全身照</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animate-on-scroll mb-16">
+                <h3 class="text-[24px] font-bold text-primary mb-8 pb-3 border-b-2 border-accent/20">其他</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/捷德奥特曼机甲模型持枪.jpeg" alt="捷德奥特曼机甲模型持枪" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="捷德奥特曼机甲模型持枪">捷德奥特曼机甲模型持枪</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/机械兽张开大嘴姿态.jpeg" alt="机械兽张开大嘴姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机械兽张开大嘴姿态">机械兽张开大嘴姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/机甲兽持武器战斗姿态.jpeg" alt="机甲兽持武器战斗姿态" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="机甲兽持武器战斗姿态">机甲兽持武器战斗姿态</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/红色发光眼部特写雕像.jpeg" alt="红色发光眼部特写雕像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="红色发光眼部特写雕像">红色发光眼部特写雕像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/绿甲红色眼面具雕像.jpeg" alt="绿甲红色眼面具雕像" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿甲红色眼面具雕像">绿甲红色眼面具雕像</p>
+                        </div>
+                    </div>
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                        <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                            <img src="images/其他/绿色盔甲人偶背面.jpeg" alt="绿色盔甲人偶背面" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        </div>
+                        <div class="p-3">
+                            <p class="text-[13px] font-medium text-primary truncate" title="绿色盔甲人偶背面">绿色盔甲人偶背面</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -283,5 +1735,63 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <script>
+    (function() {
+        var slides = document.getElementById('carousel-slides');
+        var prev = document.getElementById('carousel-prev');
+        var next = document.getElementById('carousel-next');
+        var dotsContainer = document.getElementById('carousel-dots');
+        if (!slides || !dotsContainer) return;
+        var slideCount = slides.children.length;
+        var current = 0;
+        var autoTimer;
+
+        for (var i = 0; i < slideCount; i++) {
+            var dot = document.createElement('button');
+            dot.className = 'w-2.5 h-2.5 rounded-full transition-all duration-300 ' + (i === 0 ? 'bg-accent scale-125' : 'bg-white/50 hover:bg-white/80');
+            (function(idx) {
+                dot.addEventListener('click', function() { goTo(idx); resetTimer(); });
+            })(i);
+            dotsContainer.appendChild(dot);
+        }
+
+        function updateDots() {
+            var dots = dotsContainer.children;
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = 'w-2.5 h-2.5 rounded-full transition-all duration-300 ' + (i === current ? 'bg-accent scale-125' : 'bg-white/50 hover:bg-white/80');
+            }
+        }
+
+        function goTo(index) {
+            current = ((index % slideCount) + slideCount) % slideCount;
+            slides.style.transform = 'translateX(-' + current * 100 + '%)';
+            updateDots();
+        }
+
+        function nextSlide() { goTo(current + 1); }
+        function prevSlide() { goTo(current - 1); }
+
+        prev.addEventListener('click', function() { prevSlide(); resetTimer(); });
+        next.addEventListener('click', function() { nextSlide(); resetTimer(); });
+
+        function resetTimer() {
+            clearInterval(autoTimer);
+            autoTimer = setInterval(nextSlide, 5000);
+        }
+
+        var touchStartX = 0;
+        var carousel = document.getElementById('carousel');
+        carousel.addEventListener('touchstart', function(e) { touchStartX = e.changedTouches[0].screenX; });
+        carousel.addEventListener('touchend', function(e) {
+            var touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) { nextSlide(); resetTimer(); }
+            if (touchEndX - touchStartX > 50) { prevSlide(); resetTimer(); }
+        });
+
+        autoTimer = setInterval(nextSlide, 5000);
+    })();
+    </script>
+
 </body>
 </html>
