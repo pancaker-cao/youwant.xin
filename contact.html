@@ -110,7 +110,10 @@
         <div class="animate-on-scroll animate-delay-2 bg-white rounded-2xl shadow-lg border border-black/5 p-10">
           <h3 class="text-[20px] font-bold text-gray-900 mb-2 tracking-[-0.02em]">在线咨询</h3>
           <p class="text-[13px] text-gray-400 mb-8">请简单说明需求，我们将尽快与你联系</p>
-          <form class="space-y-5" onsubmit="event.preventDefault(); alert('提交成功！我们会尽快回复你');">
+          <form class="space-y-5" action="https://formsubmit.co/694730856@qq.com" method="POST">
+            <input type="hidden" name="_next" value="https://youwant.xin/contact.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label class="block text-[13px] font-medium text-gray-500 mb-1 tracking-[0.03em]" for="name">姓名</label>
