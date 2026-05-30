@@ -1,263 +1,287 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>有望定制 — 专业模型涂装与手办加工</title>
-  <meta name="description" content="有望定制，专业模型涂装、手办加工与个性化定制服务。为热爱，定制专属。">
-  <meta name="theme-color" content="#2C3E50">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2C3E50',
-            'primary-light': '#34495e',
-            'primary-dark': '#1a252f',
-            accent: '#E67E22',
-            'accent-hover': '#d35400',
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有望定制 - 专业模型涂装与手办加工服务</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        'primary-light': '#34495E',
+                        'primary-dark': '#1A252F',
+                        accent: '#E67E22',
+                        'accent-hover': '#D35400',
+                        'accent-light': 'rgba(230,126,34,0.08)',
+                        surface: '#FAF8F5',
+                        'gray-50-c': '#F9FAFB',
+                        'gray-100-c': '#F3F4F6',
+                        'gray-200-c': '#E5E7EB',
+                        'gray-500-c': '#6B7280',
+                    },
+                    boxShadow: {
+                        'card': '0 4px 18px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.04)',
+                        'card-lg': '0 12px 40px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.04)',
+                        'accent': '0 4px 18px rgba(230,126,34,0.24)',
+                        'accent-lg': '0 8px 32px rgba(230,126,34,0.30)',
+                    },
+                    borderRadius: {
+                        '2xl': '1.5rem',
+                    },
+                    fontFamily: {
+                        sans: ['"PingFang SC"', '"Microsoft YaHei"', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to bottom, rgba(44,62,80,0.55), rgba(44,62,80,0.82))',
+                        'card-gradient': 'linear-gradient(135deg, rgba(230,126,34,0.04), rgba(44,62,80,0.03))',
+                    },
+                    transitionTimingFunction: {
+                        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+                        'back': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    },
+                }
+            }
         }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="css/style.css">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans text-gray-900 bg-white antialiased overflow-x-hidden" style="font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','PingFang SC','Microsoft YaHei',sans-serif;">
+<body class="font-sans text-gray-900 bg-white">
 
-  <!-- Header -->
-  <header id="site-header" class="fixed top-0 left-0 right-0 z-[1000] h-[68px] transition-all duration-300 bg-transparent">
-    <div class="flex items-center justify-between h-[68px] px-6 max-w-[1120px] mx-auto">
-      <a href="index.html" class="text-[22px] font-bold text-white tracking-[-0.03em]">
-        有望<span class="text-accent">定制</span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-8">
-        <a href="index.html" class="nav-link text-[15px] font-medium text-white/80 hover:text-white relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-100 after:origin-left after:transition-transform after:duration-300">首页</a>
-        <a href="services.html" class="nav-link text-[15px] font-medium text-white/65 hover:text-white relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">服务项目</a>
-        <a href="portfolio.html" class="nav-link text-[15px] font-medium text-white/65 hover:text-white relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">作品案例</a>
-        <a href="about.html" class="nav-link text-[15px] font-medium text-white/65 hover:text-white relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">关于我们</a>
-        <a href="contact.html" class="nav-link text-[15px] font-medium text-white/65 hover:text-white relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">联系我们</a>
-        <a href="contact.html" class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md text-white px-6 py-2.5 rounded-full text-[13px] font-semibold hover:scale-105 transition-transform duration-200">
-          <i class="fas fa-comment-dots"></i> 立即咨询
-        </a>
-      </nav>
-      <div id="hamburger" class="flex lg:hidden flex-col gap-[5px] cursor-pointer p-2 z-[1001]">
-        <span class="block w-[23px] h-[2px] rounded-[1px] bg-white transition-all duration-300"></span>
-        <span class="block w-[23px] h-[2px] rounded-[1px] bg-white transition-all duration-300"></span>
-        <span class="block w-[23px] h-[2px] rounded-[1px] bg-white transition-all duration-300"></span>
-      </div>
-    </div>
-    <div id="mobile-nav" class="mobile-nav fixed inset-0 bg-white/97 backdrop-blur-3xl z-[999] flex flex-col items-center justify-center gap-12 opacity-0 pointer-events-none transition-opacity duration-[420ms]">
-      <a href="index.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">首页</a>
-      <a href="services.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">服务项目</a>
-      <a href="portfolio.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">作品案例</a>
-      <a href="about.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">关于我们</a>
-      <a href="contact.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">联系我们</a>
-    </div>
-  </header>
+    <!-- Header -->
+    <header id="site-header" class="site-header fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+        <div class="header-inner max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="text-white text-[22px] font-bold tracking-tight">有望定制</a>
+            
+            <nav class="main-nav hidden lg:flex items-center gap-9 text-[15px]">
+                <a href="index.html" class="text-white font-medium border-b-2 border-accent pb-1 transition-colors duration-200">首页</a>
+                <a href="services.html" class="text-white/80 hover:text-white transition-colors duration-200">服务项目</a>
+                <a href="portfolio.html" class="text-white/80 hover:text-white transition-colors duration-200">作品展示</a>
+                <a href="about.html" class="text-white/80 hover:text-white transition-colors duration-200">关于我们</a>
+                <a href="contact.html" class="text-white/80 hover:text-white transition-colors duration-200">联系我们</a>
+            </nav>
 
-  <!-- Hero -->
-  <section class="relative h-[90vh] min-h-[640px] max-h-[860px] flex items-center justify-center overflow-hidden">
-    <div class="hero-bg absolute inset-0 bg-cover bg-center will-change-transform" style="background-image:url('https://baas-api.wanwang.xin/toc/image/preview/high-quality-model-figure-painting-detail-closeup.jpg?w=1920&h=1080');">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/45 to-black/25"></div>
-    </div>
-    <div class="hero-content relative z-10 text-center text-white px-6 max-w-[800px]">
-      <h1 class="text-[clamp(40px,6vw,72px)] font-bold leading-[1.06] mb-4 tracking-[-0.04em]">
-        为热爱，<span class="text-accent drop-shadow-[0_0_30px_rgba(230,126,34,0.4)]">定制专属</span>
-      </h1>
-      <p class="text-[clamp(16px,2vw,21px)] text-white/70 mb-14 tracking-[0.02em]">专业模型涂装 · 手办加工 · 个性化定制</p>
-      <div class="flex gap-4 justify-center flex-wrap">
-        <a href="portfolio.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-10 py-4 rounded-full text-[15px] font-semibold shadow-[0_4px_20px_rgba(230,126,34,0.28)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(230,126,34,0.35)] transition-all duration-200">
-          <i class="fas fa-images"></i> 查看作品
-        </a>
-        <a href="contact.html" class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white px-10 py-4 rounded-full text-[15px] font-semibold border border-white/25 hover:bg-white/20 hover:border-white/50 hover:-translate-y-0.5 transition-all duration-200">
-          <i class="fas fa-comment-dots"></i> 立即咨询
-        </a>
-      </div>
-    </div>
-    <div class="absolute bottom-[52px] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/35 text-xs font-medium tracking-[3px] uppercase">
-      <span>向下浏览</span>
-      <i class="fas fa-chevron-down text-base animate-[float-bounce_2.6s_cubic-bezier(0.65,0,0.35,1)_infinite]"></i>
-    </div>
-  </section>
+            <a href="contact.html" class="hidden lg:inline-flex items-center px-6 py-2.5 bg-accent text-white text-[14px] font-semibold rounded-full hover:bg-accent-hover hover:shadow-accent-lg transition-all duration-300">
+                立即咨询 <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
 
-  <!-- Services -->
-  <section class="py-28 bg-gray-50" id="services">
-    <div class="max-w-[1120px] mx-auto px-6">
-      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-center text-gray-900 mb-3 tracking-[-0.03em] animate-on-scroll">我们的服务</h2>
-      <div class="w-[52px] h-[3.5px] bg-accent rounded-sm mx-auto mt-4 mb-12"></div>
-      <p class="text-[15px] text-gray-500 text-center max-w-[580px] mx-auto mb-16 leading-relaxed animate-on-scroll">从创意到成品，全方位满足模型爱好者的个性化需求</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="service-card animate-on-scroll animate-delay-1 bg-white rounded-2xl p-10 text-center shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 right-0 h-[3.5px] bg-gradient-to-r from-accent to-accent-hover scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-[420ms]"></div>
-          <div class="w-[72px] h-[72px] rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-paint-brush text-[28px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">模型定制</h3>
-          <p class="text-[13px] text-gray-500 leading-relaxed">根据需求量身打造专属模型，从设计到成品全程跟进</p>
+            <button class="hamburger lg:hidden flex flex-col gap-1.5 p-1" onclick="toggleMobileNav()">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="service-card animate-on-scroll animate-delay-2 bg-white rounded-2xl p-10 text-center shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 right-0 h-[3.5px] bg-gradient-to-r from-accent to-accent-hover scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-[420ms]"></div>
-          <div class="w-[72px] h-[72px] rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-tools text-[28px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">专业涂装</h3>
-          <p class="text-[13px] text-gray-500 leading-relaxed">精细上色、旧化、特效处理，还原真实质感</p>
-        </div>
-        <div class="service-card animate-on-scroll animate-delay-3 bg-white rounded-2xl p-10 text-center shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 right-0 h-[3.5px] bg-gradient-to-r from-accent to-accent-hover scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-[420ms]"></div>
-          <div class="w-[72px] h-[72px] rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-gem text-[28px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">手办加工</h3>
-          <p class="text-[13px] text-gray-500 leading-relaxed">修复、改造、配件制作，让手办重获新生</p>
-        </div>
-        <div class="service-card animate-on-scroll animate-delay-4 bg-white rounded-2xl p-10 text-center shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-300 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 right-0 h-[3.5px] bg-gradient-to-r from-accent to-accent-hover scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-[420ms]"></div>
-          <div class="w-[72px] h-[72px] rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-star text-[28px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-gray-900 mb-2">其他定制</h3>
-          <p class="text-[13px] text-gray-500 leading-relaxed">场景搭建、特殊工艺，你想得到我们就能做到</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Portfolio -->
-  <section class="py-28 bg-white" id="portfolio">
-    <div class="max-w-[1120px] mx-auto px-6">
-      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-center text-gray-900 mb-3 tracking-[-0.03em] animate-on-scroll">精选作品</h2>
-      <div class="w-[52px] h-[3.5px] bg-accent rounded-sm mx-auto mt-4 mb-12"></div>
-      <p class="text-[15px] text-gray-500 text-center max-w-[580px] mx-auto mb-16 leading-relaxed animate-on-scroll">每一件作品都承载着匠心与热爱</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="portfolio-card animate-on-scroll animate-delay-1 rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
-          <div class="relative overflow-hidden aspect-[3/2]">
-            <img src="https://baas-api.wanwang.xin/toc/image/preview/detailed-gundam-model-gold-white-color-scheme.jpg?w=600&h=400" alt="自由高达" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
-              <a href="portfolio.html" class="bg-white/95 text-gray-900 px-6 py-2.5 rounded-full text-[13px] font-semibold hover:bg-accent hover:text-white transition-all duration-200">查看详情</a>
+        <!-- Mobile Nav -->
+        <div class="mobile-nav lg:hidden absolute top-full left-0 w-full bg-primary-dark/98 backdrop-blur-xl border-t border-white/10 shadow-2xl">
+            <div class="px-6 py-5 flex flex-col gap-1">
+                <a href="index.html" class="block py-2.5 text-white font-semibold border-l-[3px] border-accent pl-3">首页</a>
+                <a href="services.html" class="block py-2.5 text-white/70 hover:text-white pl-4 transition-colors">服务项目</a>
+                <a href="portfolio.html" class="block py-2.5 text-white/70 hover:text-white pl-4 transition-colors">作品展示</a>
+                <a href="about.html" class="block py-2.5 text-white/70 hover:text-white pl-4 transition-colors">关于我们</a>
+                <a href="contact.html" class="block py-2.5 text-white/70 hover:text-white pl-4 transition-colors">联系我们</a>
+                <a href="contact.html" class="mt-2 text-center px-6 py-2.5 bg-accent text-white rounded-full hover:bg-accent-hover transition-all font-semibold">立即咨询</a>
             </div>
-          </div>
-          <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">高达模型 — 自由高达</h3><p class="text-[13px] text-gray-500">精细涂装 + 旧化处理</p></div>
         </div>
-        <div class="portfolio-card animate-on-scroll animate-delay-2 rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
-          <div class="relative overflow-hidden aspect-[3/2]">
-            <img src="https://baas-api.wanwang.xin/toc/image/preview/anime-figure-hatsune-miku-custom-paint.jpg?w=600&h=400" alt="初音未来" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
-              <a href="portfolio.html" class="bg-white/95 text-gray-900 px-6 py-2.5 rounded-full text-[13px] font-semibold hover:bg-accent hover:text-white transition-all duration-200">查看详情</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden">
+        <div class="hero-bg absolute inset-0 bg-cover bg-center bg-no-repeat scale-105" style="background-image: url('https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=1920&q=85');"></div>
+        <div class="absolute inset-0 bg-hero-gradient"></div>
+        
+        <div class="hero-content relative z-10 text-center max-w-3xl mx-auto px-6">
+            <span class="inline-block px-4 py-1.5 mb-6 text-[13px] font-semibold text-accent bg-white/10 backdrop-blur-sm border border-white/15 rounded-full tracking-wider uppercase">专业模型涂装 · 手办加工</span>
+            <h1 class="text-[44px] md:text-[60px] font-extrabold text-white leading-[1.1] mb-6 tracking-tight">
+                让每个模型<br><span class="text-accent">焕发新生</span>
+            </h1>
+            <p class="text-[17px] text-white/70 leading-relaxed mb-10 max-w-lg mx-auto">深耕模型涂装领域，以极致工艺与匠心精神，为您的收藏赋予独一无二的艺术价值。</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="services.html" class="px-8 py-3.5 bg-accent text-white font-semibold rounded-full hover:bg-accent-hover hover:shadow-accent-lg transition-all duration-300 text-[15px]">了解服务</a>
+                <a href="portfolio.html" class="px-8 py-3.5 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-full hover:bg-white/20 transition-all duration-300 text-[15px]">欣赏作品</a>
             </div>
-          </div>
-          <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">手办定制 — 初音未来</h3><p class="text-[13px] text-gray-500">专属配色方案</p></div>
         </div>
-        <div class="portfolio-card animate-on-scroll animate-delay-3 rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group">
-          <div class="relative overflow-hidden aspect-[3/2]">
-            <img src="https://baas-api.wanwang.xin/toc/image/preview/military-tank-model-weathering-effect.jpg?w=600&h=400" alt="虎式坦克" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
-              <a href="portfolio.html" class="bg-white/95 text-gray-900 px-6 py-2.5 rounded-full text-[13px] font-semibold hover:bg-accent hover:text-white transition-all duration-200">查看详情</a>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <i class="fa-solid fa-chevron-down text-white/40 text-lg"></i>
+        </div>
+    </section>
+
+    <!-- 服务预览 -->
+    <section class="py-24 md:py-32 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="animate-on-scroll text-center max-w-xl mx-auto mb-16">
+                <span class="text-[13px] font-semibold text-accent uppercase tracking-[0.15em]">Our Services</span>
+                <h2 class="text-[30px] md:text-[36px] font-bold text-primary mt-3 mb-4 leading-tight">专业服务项目</h2>
+                <p class="text-gray-500-c leading-relaxed">从精细涂装到场景制作，一站式满足您的模型定制需求</p>
             </div>
-          </div>
-          <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">军事模型 — 坦克旧化</h3><p class="text-[13px] text-gray-500">逼真战场效果</p></div>
-        </div>
-      </div>
-      <div class="text-center mt-16 animate-on-scroll">
-        <a href="portfolio.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-10 py-4 rounded-full text-[15px] font-semibold shadow-[0_4px_20px_rgba(230,126,34,0.24)] hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(230,126,34,0.30)] transition-all duration-200">
-          查看更多作品 <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Advantages -->
-  <section class="py-28 bg-[#FAF8F5]" id="advantages">
-    <div class="max-w-[1120px] mx-auto px-6">
-      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-center text-gray-900 mb-3 tracking-[-0.03em] animate-on-scroll">为什么选择有望定制</h2>
-      <div class="w-[52px] h-[3.5px] bg-accent rounded-sm mx-auto mt-4 mb-12"></div>
-      <p class="text-[15px] text-gray-500 text-center max-w-[580px] mx-auto mb-16 leading-relaxed animate-on-scroll">一群同样热爱模型的人，理解你对细节的执着</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="animate-on-scroll animate-delay-1 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-award text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">匠心工艺</h3>
-          <p class="text-[15px] text-gray-500 leading-relaxed">多年经验，细节把控，每一件作品都精益求精</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
+                <!-- Card 1 -->
+                <div class="service-card animate-on-scroll animate-delay-1 group bg-white rounded-2xl p-8 shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="service-icon-wrapper w-14 h-14 flex items-center justify-center rounded-xl bg-accent-light mb-6">
+                        <i class="fa-solid fa-paintbrush text-accent text-xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold text-primary mb-3">精细涂装</h3>
+                    <p class="text-gray-500-c text-[14px] leading-relaxed">手工精细喷涂，还原每一个微小细节，呈现真实质感与层次。</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card animate-on-scroll animate-delay-2 group bg-white rounded-2xl p-8 shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="service-icon-wrapper w-14 h-14 flex items-center justify-center rounded-xl bg-accent-light mb-6">
+                        <i class="fa-solid fa-screwdriver-wrench text-accent text-xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold text-primary mb-3">改造修复</h3>
+                    <p class="text-gray-500-c text-[14px] leading-relaxed">结构改造、断件修复、无缝处理，让损坏的模型重获新生。</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card animate-on-scroll animate-delay-3 group bg-white rounded-2xl p-8 shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="service-icon-wrapper w-14 h-14 flex items-center justify-center rounded-xl bg-accent-light mb-6">
+                        <i class="fa-solid fa-cube text-accent text-xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold text-primary mb-3">场景制作</h3>
+                    <p class="text-gray-500-c text-[14px] leading-relaxed">地台、场景、特效件定制，让模型拥有叙事性的展示空间。</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card animate-on-scroll animate-delay-4 group bg-white rounded-2xl p-8 shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="service-icon-wrapper w-14 h-14 flex items-center justify-center rounded-xl bg-accent-light mb-6">
+                        <i class="fa-solid fa-star text-accent text-xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold text-primary mb-3">手办加工</h3>
+                    <p class="text-gray-500-c text-[14px] leading-relaxed">GK手办涂装、原型打磨、分件处理，呈现极致收藏品质感。</p>
+                </div>
+            </div>
         </div>
-        <div class="animate-on-scroll animate-delay-2 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-handshake text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">个性定制</h3>
-          <p class="text-[15px] text-gray-500 leading-relaxed">一对一沟通，深入理解需求，满足独特想象</p>
-        </div>
-        <div class="animate-on-scroll animate-delay-3 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
-          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
-            <i class="fas fa-shield-alt text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
-          </div>
-          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">品质保证</h3>
-          <p class="text-[15px] text-gray-500 leading-relaxed">严格质检，确保满意交付，售后无忧</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="relative py-32 bg-gradient-to-br from-primary to-primary-light text-center overflow-hidden">
-    <div class="absolute top-[-45%] right-[-18%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.07)_0%,transparent_70%)] pointer-events-none"></div>
-    <div class="absolute bottom-[-35%] left-[-12%] w-[440px] h-[440px] rounded-full bg-[radial-gradient(circle,rgba(230,126,34,0.12)_0%,transparent_70%)] pointer-events-none"></div>
-    <div class="relative z-10 max-w-[1120px] mx-auto px-6">
-      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-white mb-4 tracking-[-0.03em] animate-on-scroll">每一处细节，都值得用心对待</h2>
-      <p class="text-white/55 text-base mb-10 max-w-[560px] mx-auto leading-relaxed animate-on-scroll">从沟通到交付，全程一对一服务</p>
-      <a href="contact.html" class="animate-on-scroll inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-[52px] py-[17px] rounded-full text-[17px] font-semibold shadow-[0_4px_24px_rgba(0,0,0,0.22)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.28)] transition-all duration-200">
-        开启定制 <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  </section>
+    <!-- 作品展示 -->
+    <section class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="animate-on-scroll text-center max-w-xl mx-auto mb-16">
+                <span class="text-[13px] font-semibold text-accent uppercase tracking-[0.15em]">Portfolio</span>
+                <h2 class="text-[30px] md:text-[36px] font-bold text-primary mt-3 mb-4 leading-tight">精选作品</h2>
+                <p class="text-gray-500-c leading-relaxed">每一件作品都倾注了我们的专注与热爱</p>
+            </div>
 
-  <!-- Footer -->
-  <footer class="bg-primary-dark pt-16">
-    <div class="max-w-[1120px] mx-auto px-6">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-12">
-        <div>
-          <div class="text-xl font-bold text-white mb-4 tracking-[-0.02em]">有望<span class="text-accent">定制</span></div>
-          <p class="text-[13px] leading-[1.85] text-white/40">专业模型涂装 · 手办加工 · 个性化定制服务<br>为热爱，定制专属</p>
-        </div>
-        <div>
-          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">快速导航</h4>
-          <ul class="space-y-2">
-            <li><a href="index.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">首页</a></li>
-            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">服务项目</a></li>
-            <li><a href="portfolio.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">作品案例</a></li>
-            <li><a href="about.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">关于我们</a></li>
-            <li><a href="contact.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">联系我们</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">服务项目</h4>
-          <ul class="space-y-2">
-            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">模型定制</a></li>
-            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">专业涂装</a></li>
-            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">手办加工</a></li>
-            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">其他定制</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">联系方式</h4>
-          <div class="space-y-2">
-            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-weixin text-accent w-4 text-center text-xs"></i><span>微信：youwang_custom</span></div>
-            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-qq text-accent w-4 text-center text-xs"></i><span>QQ：123456789</span></div>
-            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-phone text-accent w-4 text-center text-xs"></i><span>138-0000-0000</span></div>
-            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-clock text-accent w-4 text-center text-xs"></i><span>9:00 - 21:00 全年无休</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="border-t border-white/5 py-6 text-center text-xs text-white/25">
-        <p>&copy; 2026 有望定制. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <div class="portfolio-card animate-on-scroll group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580477371194-459b9a32c4f1?w=600&q=80" alt="机甲模型涂装" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">精细涂装</span>
+                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">高达 MG 沙扎比 Ver.Ka</h3>
+                        <p class="text-gray-500-c text-[13px] leading-relaxed">金属漆分色喷涂，精密刻线渗线，消光质感呈现。</p>
+                    </div>
+                </div>
+                <div class="portfolio-card animate-on-scroll animate-delay-1 group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=600&q=80" alt="场景制作" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">场景制作</span>
+                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">废墟都市战斗场景</h3>
+                        <p class="text-gray-500-c text-[13px] leading-relaxed">多层地台 + 旧化涂装 + 爆炸特效件，营造叙事氛围。</p>
+                    </div>
+                </div>
+                <div class="portfolio-card animate-on-scroll animate-delay-2 group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg hover:-translate-y-1">
+                    <div class="aspect-[4/3] bg-gray-100-c overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558000334-eb24b8d0ae67?w=600&q=80" alt="手办涂装" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-[11px] font-semibold text-accent uppercase tracking-wider">手办加工</span>
+                        <h3 class="text-[17px] font-bold text-primary mt-1.5 mb-2">GK 龙珠 超赛悟空</h3>
+                        <p class="text-gray-500-c text-[13px] leading-relaxed">肤色渐变 + 头发透明件处理 + 肌肉阴影强化。</p>
+                    </div>
+                </div>
+            </div>
 
-  <script src="js/main.js"></script>
+            <div class="animate-on-scroll text-center mt-12">
+                <a href="portfolio.html" class="inline-flex items-center gap-2 px-8 py-3 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary hover:text-white transition-all duration-300 text-[15px]">
+                    查看全部作品 <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势 -->
+    <section class="py-24 md:py-32 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="animate-on-scroll text-center max-w-xl mx-auto mb-16">
+                <span class="text-[13px] font-semibold text-accent uppercase tracking-[0.15em]">Why Choose Us</span>
+                <h2 class="text-[30px] md:text-[36px] font-bold text-white mt-3 mb-4 leading-tight">为什么选择我们</h2>
+                <p class="text-white/55 leading-relaxed">以匠心与专业，赢得每一位客户的信赖</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="animate-on-scroll animate-delay-1">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-2xl bg-accent/15 border border-accent/20">
+                        <i class="fa-solid fa-medal text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold mb-3">资深匠人团队</h3>
+                    <p class="text-white/50 text-[14px] leading-relaxed max-w-[260px] mx-auto">10 年以上专业涂装师领衔，服务超 3000 位客户。</p>
+                </div>
+                <div class="animate-on-scroll animate-delay-2">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-2xl bg-accent/15 border border-accent/20">
+                        <i class="fa-solid fa-droplet text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold mb-3">进口颜料工艺</h3>
+                    <p class="text-white/50 text-[14px] leading-relaxed max-w-[260px] mx-auto">采用日本 Gaia、西班牙 Vallejo 等进口高端模型漆。</p>
+                </div>
+                <div class="animate-on-scroll animate-delay-3">
+                    <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-2xl bg-accent/15 border border-accent/20">
+                        <i class="fa-solid fa-shield-halved text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-[18px] font-bold mb-3">全程透明沟通</h3>
+                    <p class="text-white/50 text-[14px] leading-relaxed max-w-[260px] mx-auto">进度实时反馈，作品完成前提供定妆照确认。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 md:py-32 cta-section bg-primary-light">
+        <div class="relative z-10 max-w-3xl mx-auto text-center px-6">
+            <h2 class="text-[32px] md:text-[40px] font-extrabold text-white leading-tight mb-5">准备开始您的模型定制之旅？</h2>
+            <p class="text-white/55 text-[16px] mb-10 leading-relaxed">联系我们的专业顾问，为您定制专属方案。</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-10 py-4 bg-gradient-to-r from-accent to-accent-hover text-white font-bold rounded-full hover:shadow-accent-lg transition-all duration-300 text-[16px]">
+                立即咨询 <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white/55 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-10 mb-12">
+                <div>
+                    <h4 class="text-white text-[20px] font-bold mb-4">有望定制</h4>
+                    <p class="text-[14px] leading-relaxed">专业模型涂装与手办加工服务，以匠心成就每一件作品。</p>
+                </div>
+                <div>
+                    <h5 class="text-white text-[15px] font-semibold mb-4">快速导航</h5>
+                    <ul class="space-y-2.5 text-[14px]">
+                        <li><a href="index.html" class="hover:text-accent transition-colors">首页</a></li>
+                        <li><a href="services.html" class="hover:text-accent transition-colors">服务项目</a></li>
+                        <li><a href="portfolio.html" class="hover:text-accent transition-colors">作品展示</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition-colors">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white text-[15px] font-semibold mb-4">联系我们</h5>
+                    <ul class="space-y-2.5 text-[14px]">
+                        <li><i class="fa-solid fa-phone text-accent mr-2.5"></i>138-0000-0000</li>
+                        <li><i class="fa-solid fa-envelope text-accent mr-2.5"></i>contact@youwang.com</li>
+                        <li><i class="fa-solid fa-location-dot text-accent mr-2.5"></i>广东省深圳市</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/8 pt-8 text-center text-[13px]">
+                <p>&copy; 2026 有望定制 YouWang Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
