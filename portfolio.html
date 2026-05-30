@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2C3E50">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2C3E50',
+            'primary-light': '#34495e',
+            'primary-dark': '#1a252f',
+            accent: '#E67E22',
+            'accent-hover': '#d35400',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>作品案例 — 有望定制</title>
+  <meta name="description" content="有望定制作品案例展示——高达模型、手办涂装、军事模型等精选作品。">
+</head>
+<body class="font-sans text-gray-900 bg-white antialiased overflow-x-hidden" style="font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','PingFang SC','Microsoft YaHei',sans-serif;">
+
+  <!-- Header -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-[1000] h-[68px] bg-white/85 backdrop-blur-2xl shadow-[0_1px_0_rgba(0,0,0,0.05),0_4px_16px_rgba(0,0,0,0.04)] transition-all duration-300">
+    <div class="flex items-center justify-between h-[68px] px-6 max-w-[1120px] mx-auto">
+      <a href="index.html" class="text-[22px] font-bold text-gray-900 tracking-[-0.03em]">
+        有望<span class="text-accent">定制</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">首页</a>
+        <a href="services.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">服务项目</a>
+        <a href="portfolio.html" class="nav-link text-[15px] font-medium text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-100 after:origin-left after:transition-transform after:duration-300">作品案例</a>
+        <a href="about.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">关于我们</a>
+        <a href="contact.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">联系我们</a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-6 py-2.5 rounded-full text-[13px] font-semibold hover:scale-105 shadow-md transition-all duration-200"><i class="fas fa-comment-dots"></i> 立即咨询</a>
+      </nav>
+      <div id="hamburger" class="flex lg:hidden flex-col gap-[5px] cursor-pointer p-2 z-[1001]">
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+      </div>
+    </div>
+    <div id="mobile-nav" class="mobile-nav fixed inset-0 bg-white/97 backdrop-blur-3xl z-[999] flex flex-col items-center justify-center gap-12 opacity-0 pointer-events-none transition-opacity duration-[420ms]">
+      <a href="index.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">首页</a>
+      <a href="services.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">服务项目</a>
+      <a href="portfolio.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">作品案例</a>
+      <a href="about.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">关于我们</a>
+      <a href="contact.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">联系我们</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="relative min-h-[340px] flex items-center justify-center text-center text-white overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://baas-api.wanwang.xin/toc/image/preview/high-quality-model-figure-painting-detail-closeup.jpg?w=1920&h=600');">
+      <div class="absolute inset-0 bg-gradient-to-b from-primary/88 via-primary/75 to-primary/65"></div>
+    </div>
+    <div class="relative z-10 max-w-[1120px] mx-auto px-6 pt-24 pb-12">
+      <h1 class="text-[clamp(28px,4.2vw,50px)] font-bold mb-2 tracking-[-0.03em]">作品案例</h1>
+      <p class="text-[15px] text-white/55">每一件作品，都是匠心与热爱的呈现</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-28 bg-white">
+    <div class="max-w-[1120px] mx-auto px-6">
+
+      <!-- Filter -->
+      <div class="flex flex-wrap justify-center gap-3 mb-16">
+        <button class="filter-btn active bg-gradient-to-br from-accent to-accent-hover text-white shadow-md" data-category="all">全部</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="gundam">高达</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="figure">手办</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="military">军事</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="mecha">机甲</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="scifi">科幻</button>
+        <button class="filter-btn bg-gray-50 text-gray-500 hover:text-gray-900 hover:bg-gray-100" data-category="anime">动漫</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 portfolio-listing">
+        <!-- Gundam -->
+        <div class="portfolio-item animate-on-scroll animate-delay-1" data-category="gundam">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-1">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/detailed-gundam-model-gold-white-color-scheme.jpg?w=600&h=400" alt="自由高达" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">自由高达</h3><p class="text-[13px] text-gray-500">精细涂装 + 阴影渐变</p></div>
+          </div>
+        </div>
+        <!-- Figure -->
+        <div class="portfolio-item animate-on-scroll animate-delay-2" data-category="figure">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-2">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/anime-figure-hatsune-miku-custom-paint.jpg?w=600&h=400" alt="初音未来" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">初音未来</h3><p class="text-[13px] text-gray-500">手办定制 + 珠光漆面</p></div>
+          </div>
+        </div>
+        <!-- Military -->
+        <div class="portfolio-item animate-on-scroll animate-delay-3" data-category="military">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-3">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/military-tank-model-weathering-effect.jpg?w=600&h=400" alt="虎式坦克" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">虎式坦克</h3><p class="text-[13px] text-gray-500">重度旧化 + 场景地台</p></div>
+          </div>
+        </div>
+        <!-- Mecha -->
+        <div class="portfolio-item animate-on-scroll animate-delay-1" data-category="mecha">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-4">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/mecha-robot-model-metallic-paint-job.jpg?w=600&h=400" alt="钛金机甲" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">钛金机甲</h3><p class="text-[13px] text-gray-500">金属质感涂装</p></div>
+          </div>
+        </div>
+        <!-- Sci-fi -->
+        <div class="portfolio-item animate-on-scroll animate-delay-2" data-category="scifi">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-5">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/tank-model-chipping-rust-effect.jpg?w=600&h=400" alt="星际战机" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">星际战机</h3><p class="text-[13px] text-gray-500">科幻涂装 + 灯光效果</p></div>
+          </div>
+        </div>
+        <!-- Anime -->
+        <div class="portfolio-item animate-on-scroll animate-delay-3" data-category="anime">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-6">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/detailed-gundam-model-gold-white-color-scheme.jpg?w=600&h=400" alt="动漫角色" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">动漫角色</h3><p class="text-[13px] text-gray-500">角色涂装还原</p></div>
+          </div>
+        </div>
+        <!-- Gundam 2 -->
+        <div class="portfolio-item animate-on-scroll animate-delay-1" data-category="gundam">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-7">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/mecha-robot-model-metallic-paint-job.jpg?w=600&h=400" alt="独角兽高达" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">独角兽高达</h3><p class="text-[13px] text-gray-500">裂甲 + 精神感应骨架</p></div>
+          </div>
+        </div>
+        <!-- Figure 2 -->
+        <div class="portfolio-item animate-on-scroll animate-delay-2" data-category="figure">
+          <div class="rounded-2xl overflow-hidden bg-white shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer group" data-modal="modal-8">
+            <div class="relative overflow-hidden aspect-[3/2]">
+              <img src="https://baas-api.wanwang.xin/toc/image/preview/anime-figure-hatsune-miku-custom-paint.jpg?w=600&h=400" alt="定制手办" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[650ms]" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-4">
+                <span class="bg-white/90 text-gray-900 px-4 py-1.5 rounded-full text-[11px] font-semibold"><i class="fas fa-search-plus mr-1"></i> 查看</span>
+              </div>
+            </div>
+            <div class="p-5"><h3 class="text-[15px] font-semibold text-gray-900 mb-1">定制手办</h3><p class="text-[13px] text-gray-500">全身重新涂装</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="fixed inset-0 z-[2000] bg-black/85 backdrop-blur-md flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-[380ms]">
+    <div class="relative bg-white rounded-2xl max-w-[720px] w-[calc(100%-32px)] max-h-[85vh] overflow-y-auto shadow-2xl" onclick="event.stopPropagation()">
+      <button id="modal-close" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/5 hover:bg-black/10 flex items-center justify-center text-gray-500 hover:text-gray-900 transition-all duration-200 z-10">
+        <i class="fas fa-times text-lg"></i>
+      </button>
+      <img id="modal-img" src="" alt="" class="w-full aspect-[3/2] object-cover">
+      <div class="p-8"><h2 id="modal-title" class="text-[22px] font-bold text-gray-900 mb-2 tracking-[-0.02em]"></h2><p id="modal-desc" class="text-[15px] text-gray-500 leading-relaxed"></p></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <section class="relative py-32 bg-gradient-to-br from-primary to-primary-light text-center overflow-hidden">
+    <div class="absolute top-[-45%] right-[-18%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.07)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="absolute bottom-[-35%] left-[-12%] w-[440px] h-[440px] rounded-full bg-[radial-gradient(circle,rgba(230,126,34,0.12)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="relative z-10 max-w-[1120px] mx-auto px-6">
+      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-white mb-4 tracking-[-0.03em] animate-on-scroll">想拥有你的专属作品？</h2>
+      <p class="text-white/55 text-base mb-10 max-w-[560px] mx-auto leading-relaxed animate-on-scroll">任何想法都能落地，联系我们聊聊你的构思</p>
+      <a href="contact.html" class="animate-on-scroll inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-[52px] py-[17px] rounded-full text-[17px] font-semibold shadow-[0_4px_24px_rgba(0,0,0,0.20)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.28)] transition-all duration-200">
+        开启定制 <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark pt-16">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-12">
+        <div>
+          <div class="text-xl font-bold text-white mb-4 tracking-[-0.02em]">有望<span class="text-accent">定制</span></div>
+          <p class="text-[13px] leading-[1.85] text-white/40">专业模型涂装 · 手办加工 · 个性化定制服务<br>为热爱，定制专属</p>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">快速导航</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">首页</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">服务项目</a></li>
+            <li><a href="portfolio.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">作品案例</a></li>
+            <li><a href="about.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">关于我们</a></li>
+            <li><a href="contact.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">服务项目</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">模型定制</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">专业涂装</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">手办加工</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">其他定制</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">联系方式</h4>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-weixin text-accent w-4 text-center text-xs"></i><span>微信：youwang_custom</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-qq text-accent w-4 text-center text-xs"></i><span>QQ：123456789</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-phone text-accent w-4 text-center text-xs"></i><span>138-0000-0000</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-clock text-accent w-4 text-center text-xs"></i><span>9:00 - 21:00 全年无休</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 py-6 text-center text-xs text-white/25">
+        <p>&copy; 2026 有望定制. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

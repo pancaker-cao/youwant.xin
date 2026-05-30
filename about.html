@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#2C3E50">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2C3E50',
+            'primary-light': '#34495e',
+            'primary-dark': '#1a252f',
+            accent: '#E67E22',
+            'accent-hover': '#d35400',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>关于我们 — 有望定制</title>
+  <meta name="description" content="有望定制——一群热爱模型的匠人，专注模型涂装、手办加工与个性化定制。">
+</head>
+<body class="font-sans text-gray-900 bg-white antialiased overflow-x-hidden" style="font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','PingFang SC','Microsoft YaHei',sans-serif;">
+
+  <!-- Header -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-[1000] h-[68px] bg-white/85 backdrop-blur-2xl shadow-[0_1px_0_rgba(0,0,0,0.05),0_4px_16px_rgba(0,0,0,0.04)] transition-all duration-300">
+    <div class="flex items-center justify-between h-[68px] px-6 max-w-[1120px] mx-auto">
+      <a href="index.html" class="text-[22px] font-bold text-gray-900 tracking-[-0.03em]">
+        有望<span class="text-accent">定制</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="index.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">首页</a>
+        <a href="services.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">服务项目</a>
+        <a href="portfolio.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">作品案例</a>
+        <a href="about.html" class="nav-link text-[15px] font-medium text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-100 after:origin-left after:transition-transform after:duration-300">关于我们</a>
+        <a href="contact.html" class="nav-link text-[15px] font-medium text-gray-500 hover:text-gray-900 relative py-1 after:absolute after:-bottom-[3px] after:left-0 after:right-0 after:h-[2.5px] after:rounded-sm after:bg-accent after:scale-x-0 after:origin-left after:transition-transform after:duration-300">联系我们</a>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-6 py-2.5 rounded-full text-[13px] font-semibold hover:scale-105 shadow-md transition-all duration-200"><i class="fas fa-comment-dots"></i> 立即咨询</a>
+      </nav>
+      <div id="hamburger" class="flex lg:hidden flex-col gap-[5px] cursor-pointer p-2 z-[1001]">
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+        <span class="block w-[23px] h-[2px] rounded-[1px] bg-gray-900 transition-all duration-300"></span>
+      </div>
+    </div>
+    <div id="mobile-nav" class="mobile-nav fixed inset-0 bg-white/97 backdrop-blur-3xl z-[999] flex flex-col items-center justify-center gap-12 opacity-0 pointer-events-none transition-opacity duration-[420ms]">
+      <a href="index.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">首页</a>
+      <a href="services.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">服务项目</a>
+      <a href="portfolio.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">作品案例</a>
+      <a href="about.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">关于我们</a>
+      <a href="contact.html" class="text-[28px] font-medium text-gray-900 tracking-[-0.02em] hover:text-accent transition-colors">联系我们</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="relative min-h-[340px] flex items-center justify-center text-center text-white overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://baas-api.wanwang.xin/toc/image/preview/high-quality-model-figure-painting-detail-closeup.jpg?w=1920&h=600');">
+      <div class="absolute inset-0 bg-gradient-to-b from-primary/88 via-primary/75 to-primary/65"></div>
+    </div>
+    <div class="relative z-10 max-w-[1120px] mx-auto px-6 pt-24 pb-12">
+      <h1 class="text-[clamp(28px,4.2vw,50px)] font-bold mb-2 tracking-[-0.03em]">关于我们</h1>
+      <p class="text-[15px] text-white/55">一群同样热爱模型的人，用匠心对待每一个作品</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-28 bg-white">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="animate-on-scroll order-2 lg:order-1">
+          <h2 class="text-[clamp(20px,2.4vw,30px)] font-bold text-gray-900 mb-5 tracking-[-0.03em]">我们是谁</h2>
+          <p class="text-[15px] text-gray-500 leading-relaxed mb-6">有望定制成立于 2018 年，由一群热爱模型的资深爱好者创立。我们深谙模型制作的乐趣与挑战，理解每一位藏家对品质的执着追求——因此，每一件作品我们都要求零妥协。</p>
+          <p class="text-[15px] text-gray-500 leading-relaxed mb-4">团队核心成员均具备 5 年以上模型制作经验，涵盖高达、军模、手办、科幻等多领域。我们相信，真正的匠心在细节处雕琢。从喷涂工艺到旧化效果，每一道工序都倾注匠人心血。</p>
+          <p class="text-[15px] text-gray-500 leading-relaxed">"为热爱，定制专属"——这是我们对每一位用户的承诺。</p>
+        </div>
+        <div class="animate-on-scroll order-1 lg:order-2 rounded-2xl overflow-hidden shadow-xl">
+          <img src="https://baas-api.wanwang.xin/toc/image/preview/high-quality-model-figure-painting-detail-closeup.jpg?w=640&h=480" alt="工作室环境" class="w-full aspect-[4/3] object-cover" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-16 bg-gradient-to-br from-primary to-primary-light">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+        <div class="animate-on-scroll animate-delay-1"><div class="text-[clamp(32px,4vw,48px)] font-bold">5000<span class="text-accent">+</span></div><p class="text-[13px] text-white/50 mt-1">作品交付</p></div>
+        <div class="animate-on-scroll animate-delay-2"><div class="text-[clamp(32px,4vw,48px)] font-bold">8<span class="text-accent">年</span></div><p class="text-[13px] text-white/50 mt-1">行业经验</p></div>
+        <div class="animate-on-scroll animate-delay-3"><div class="text-[clamp(32px,4vw,48px)] font-bold">3000<span class="text-accent">+</span></div><p class="text-[13px] text-white/50 mt-1">满意客户</p></div>
+        <div class="animate-on-scroll animate-delay-4"><div class="text-[clamp(32px,4vw,48px)] font-bold">100<span class="text-accent">%</span></div><p class="text-[13px] text-white/50 mt-1">质检合格</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="py-28 bg-[#FAF8F5]">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-center text-gray-900 mb-3 tracking-[-0.03em] animate-on-scroll">我们的理念</h2>
+      <div class="w-[52px] h-[3.5px] bg-accent rounded-sm mx-auto mt-4 mb-12"></div>
+      <p class="text-[15px] text-gray-500 text-center max-w-[580px] mx-auto mb-16 leading-relaxed animate-on-scroll">每一件作品，都是热爱与匠心的交融</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="animate-on-scroll animate-delay-1 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
+          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
+            <i class="fas fa-heart text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">初心</h3>
+          <p class="text-[15px] text-gray-500 leading-relaxed">因为热爱，所以我们比任何人都更懂你想要的。每一件作品，都是我们与用户共同的热爱延伸。</p>
+        </div>
+        <div class="animate-on-scroll animate-delay-2 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
+          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
+            <i class="fas fa-hand-sparkles text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">匠心</h3>
+          <p class="text-[15px] text-gray-500 leading-relaxed">每一道工序都不可马虎。从打磨到上色，从旧化到终检，我们坚持以超高标准交付每一件作品。</p>
+        </div>
+        <div class="animate-on-scroll animate-delay-3 text-center p-8 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group">
+          <div class="w-20 h-20 rounded-xl bg-orange-50 flex items-center justify-center mx-auto mb-6 group-hover:bg-accent transition-all duration-300">
+            <i class="fas fa-smile text-[32px] text-accent group-hover:text-white transition-colors duration-300"></i>
+          </div>
+          <h3 class="text-[19px] font-semibold text-gray-900 mb-2">温度</h3>
+          <p class="text-[15px] text-gray-500 leading-relaxed">模型不应冰冷。我们与用户保持亲密沟通，让每一件作品都承载着情感与故事。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Environment -->
+  <section class="py-28 bg-white">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-center text-gray-900 mb-3 tracking-[-0.03em] animate-on-scroll">工作环境</h2>
+      <div class="w-[52px] h-[3.5px] bg-accent rounded-sm mx-auto mt-4 mb-12"></div>
+      <p class="text-[15px] text-gray-500 text-center max-w-[580px] mx-auto mb-16 leading-relaxed animate-on-scroll">无尘喷涂间 · 恒温恒湿 · 专业设备</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="animate-on-scroll animate-delay-1 rounded-2xl overflow-hidden shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          <img src="https://baas-api.wanwang.xin/toc/image/preview/detailed-gundam-model-gold-white-color-scheme.jpg?w=600&h=400" alt="喷涂工作间" class="w-full aspect-[3/2] object-cover" loading="lazy">
+          <div class="p-5"><h4 class="text-[15px] font-semibold text-gray-900 mb-1">无尘喷涂间</h4><p class="text-[13px] text-gray-500">恒温恒湿，确保漆面完美</p></div>
+        </div>
+        <div class="animate-on-scroll animate-delay-2 rounded-2xl overflow-hidden shadow-sm border border-black/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+          <img src="https://baas-api.wanwang.xin/toc/image/preview/mecha-robot-model-metallic-paint-job.jpg?w=600&h=400" alt="质检工序" class="w-full aspect-[3/2] object-cover" loading="lazy">
+          <div class="p-5"><h4 class="text-[15px] font-semibold text-gray-900 mb-1">质检工序</h4><p class="text-[13px] text-gray-500">三道质检，品质有保障</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-32 bg-gradient-to-br from-primary to-primary-light text-center overflow-hidden">
+    <div class="absolute top-[-45%] right-[-18%] w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.07)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="absolute bottom-[-35%] left-[-12%] w-[440px] h-[440px] rounded-full bg-[radial-gradient(circle,rgba(230,126,34,0.12)_0%,transparent_70%)] pointer-events-none"></div>
+    <div class="relative z-10 max-w-[1120px] mx-auto px-6">
+      <h2 class="text-[clamp(24px,3.2vw,38px)] font-bold text-white mb-4 tracking-[-0.03em] animate-on-scroll">来认识我们的团队</h2>
+      <p class="text-white/55 text-base mb-10 max-w-[560px] mx-auto leading-relaxed animate-on-scroll">想亲自聊聊你的定制想法？随时欢迎</p>
+      <a href="contact.html" class="animate-on-scroll inline-flex items-center gap-2 bg-gradient-to-br from-accent to-accent-hover text-white px-[52px] py-[17px] rounded-full text-[17px] font-semibold shadow-[0_4px_24px_rgba(0,0,0,0.20)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(0,0,0,0.28)] transition-all duration-200">
+        联系我们 <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark pt-16">
+    <div class="max-w-[1120px] mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-12 pb-12">
+        <div>
+          <div class="text-xl font-bold text-white mb-4 tracking-[-0.02em]">有望<span class="text-accent">定制</span></div>
+          <p class="text-[13px] leading-[1.85] text-white/40">专业模型涂装 · 手办加工 · 个性化定制服务<br>为热爱，定制专属</p>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">快速导航</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">首页</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">服务项目</a></li>
+            <li><a href="portfolio.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">作品案例</a></li>
+            <li><a href="about.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">关于我们</a></li>
+            <li><a href="contact.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">服务项目</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">模型定制</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">专业涂装</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">手办加工</a></li>
+            <li><a href="services.html" class="text-[13px] text-white/45 hover:text-accent transition-colors duration-200">其他定制</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[13px] font-semibold text-white/45 mb-6 uppercase tracking-[0.08em]">联系方式</h4>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-weixin text-accent w-4 text-center text-xs"></i><span>微信：youwang_custom</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fab fa-qq text-accent w-4 text-center text-xs"></i><span>QQ：123456789</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-phone text-accent w-4 text-center text-xs"></i><span>138-0000-0000</span></div>
+            <div class="flex items-center gap-2 text-[13px] text-white/45"><i class="fas fa-clock text-accent w-4 text-center text-xs"></i><span>9:00 - 21:00 全年无休</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 py-6 text-center text-xs text-white/25">
+        <p>&copy; 2026 有望定制. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
